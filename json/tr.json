@@ -1,0 +1,39 @@
+{
+  "hi": "Hi",
+  "finance-team": "Finance team",
+  "booking-pending-title": "Rezervasyonunuz onaylandı!",
+  "booking-pending-desc": "Bavulunuzu hazırlamaya başlayın - yola çıkma zamanı geldi! Satın aldığınız seyahat için resmi faturanızı ve belgenizi bu e-postaya ekledik.",
+
+  "cancel-booking-title": "YRezervasyonunuz başarıyla iptal edildi.",
+  "cancel-booking-desc": "Planlar değişebilir ve bazen zor kararlar vermek durumunda kalabilirsiniz, bunu anlıyoruz. Ama üzülmeyin, bir sonraki rezervasyonunuzu daima dört gözle bekleyeceğiz!",
+
+  "cancel-refund-title": "Rezervasyonunuz iptal edildi, ücret iadesi işleme alındı.",
+  "cancel-refund-desc": "Rezervasyonunuzu iptal ettiğinizi görünce gerçekten üzüldük - ama bunu anlıyoruz, planlar değişebilir. Ücret iade işleminize başladık - iadenin hesabınıza ulaşması <strong>20-25 gün</strong> sürebilir.",
+
+  "delayed-voucher-title": "Son kuponunuz ektedir!",
+  "delayed-voucher-desc": "Bundan önce gönderilmiş olan kupon, tedarikçimizden yapmış olduğunuz rezervasyonun onayıdır. Bu postaya eklenmiş olan kupon turdaki veya etkinlik gişesindeki ürün için olan son kupondur",
+
+  "payment-successful-title": "Ödemeniz başarılı.",
+  "payment-successful-desc": "Rezervasyonunuzun detaylarını güvenle saklayabilmeniz için buraya ekledik. 30 dakika içerisinde size ayrı bir e-posta ile resmi faturanızı ve belgenizi ulaştıracağız",
+
+  "request-refund-title": "Booking ({{z_bookingId}}) has been canceled.",
+  "request-refund-desc": "Details for this booking made by <strong>{{z_fname}}&nbsp;</strong>are included below. <br> Please process the relevant <strong>refund amount</strong>",
+
+  "customer-name": "Müşteri Adı",
+  "wego-reference-id": "Wego Referans Numarası",
+  "voucher-number": "Belge no:",
+  "travel-date": "Seyahat Tarihi",
+  "booking-date": "Rezervasyon Tarihi",
+  "cancellation-policy": "İptal Politikası",
+  "contact-us": "Bize Ulaşın",
+  "contact-us-msg": "Herhangi bir acil durum söz konusu olduğunda lütfen destek ekibimizle iletişime geçin.",
+  "phone-whatsapp": "Telefon ya da Whatsapp",
+  "outside-egypt": "outside Egypt",
+  "within-egypt": "within Egypt",
+  "email": "Email",
+  "total-pax": "Toplam Yolcu",
+  "total-price": "Toplam Ücret",
+  "sent-wego": "Sent by <strong>Wego</strong>",
+  "privacy-policy": "Privacy policy",
+  "terms-conditions": "Terms & Conditions"
+}
