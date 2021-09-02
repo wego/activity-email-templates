@@ -16,6 +16,7 @@
     "@yodasws/gulp-json-replace": "2.1.0",
     "del": "^6.0.0",
     "fs": "^0.0.1-security",
+    "google-spreadsheet": "^3.1.15",
     "gulp": "4.0.0",
     "gulp-mjml": "4.0.2",
     "gulp-replace": "^1.1.3"
