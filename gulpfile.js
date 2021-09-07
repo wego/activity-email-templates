@@ -22,7 +22,7 @@ const getSheetData = async () => {
   }
 
   try {
-    const doc = new GoogleSpreadsheet('18Te5QUl3oSEBcvJDBQK7PsCrNrXprPX_FfzTv5CQ5Jw')
+    const doc = new GoogleSpreadsheet('1PNbiZhhLGex3ABCFQt-B3C4uGeTBGvXjHO3p2WMlMUA')
     doc.useServiceAccountAuth(serviceAccount)
 
     await doc.loadInfo();
