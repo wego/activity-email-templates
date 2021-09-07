@@ -1,0 +1,8 @@
+s3 staging:
+  stage: deploy
+  image: python:latest
+  script:
+  - pip install awscli
+  - aws s3 sync ./build/ s3://ib-activities-assets-ap-southeast-1-335280333914/edm-templates/ --acl "public-read" --exclude "*" --include "*.html"
+  only:
+  - main
