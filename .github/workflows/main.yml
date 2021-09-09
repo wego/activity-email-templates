@@ -6,7 +6,8 @@ on:
       - main
 
 jobs:
-  build-job:
+  job1:
+    name: build-job
     runs-on: ubuntu-latest
 
     strategy:
@@ -25,8 +26,11 @@ jobs:
         run: |
           npm install
           gulp
-  upload-job:
+  job2:
+    name: upload-job
+    needs: job1
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v1
