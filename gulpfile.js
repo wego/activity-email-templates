@@ -55,6 +55,7 @@ gulp.task('getSheetData', async () => {
   await getSheetData();
   //Get files name from repo
   langPath = await fs.readdirSync('json');
+  console.log(langPath)
 });
 
 // Remove the html folder
@@ -66,6 +67,7 @@ gulp.task('clean', async function () {
 gulp.task('mjmlToHTML', async function () {
   langPath.map(async function (langItem) {
     const lang = langItem.split('.').slice(0, -1).join('.')
+    console.log('lang', lang)
     return await gulp.src('mjml/*.mjml')
       .pipe(mjml())
       .pipe(gulp.dest('./html/' + lang))
