@@ -15,16 +15,24 @@ jobs:
     - run: npm install
     - run: gulp
     
-    - name: Commit report
-      run: |
-        git config --global user.name 'Leo Felix'
-        git config --global user.email 'leo@wego.com'
-        git commit -am "Automated templates"
-        git push
-          
   job2:
-    name: upload-job
+    name: commit-job
     needs: job1
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Perform Checkout
+      uses: actions/checkout@v2
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+        publish_branch: main
+          
+  job3:
+    name: upload-job
+    needs: job2
     runs-on: ubuntu-latest
 
     steps:
