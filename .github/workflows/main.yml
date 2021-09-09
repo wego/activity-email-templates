@@ -14,6 +14,13 @@ jobs:
         node-version: '14'
     - run: npm install
     - run: gulp
+    
+    - name: Commit report
+      run: |
+        git config --global user.name 'Leo Felix'
+        git config --global user.email 'leo@wego.com'
+        git commit -am "Automated templates"
+        git push
           
   job2:
     name: upload-job
