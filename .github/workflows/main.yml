@@ -14,25 +14,23 @@ jobs:
         node-version: '14'
     - run: npm install
     - run: gulp
-
-  job2:
-    name: push-job
-    needs: job1
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@master
-    - name: Github Release
-      uses: elgohr/Github-Release-Action@v3.1
-
-      env:
-        GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+    
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        args: MyReleaseMessage
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: main
+        FOLDER: 'build'
+
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: build
+        path: build
           
-  job3:
+  job2:
     name: deploy-job
-    needs: job2
+    needs: job1
     runs-on: ubuntu-latest
 
     steps:
