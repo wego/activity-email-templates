@@ -2,8 +2,9 @@ name: Build email templates
 
 on:
   push:
-    branches:
-      - main
+    branches: [ build ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build:
@@ -21,7 +22,6 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: build
-          FOLDER: "build"
 
       - name: Archive production artifacts
         uses: actions/upload-artifact@v1
