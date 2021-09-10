@@ -1,8 +1,9 @@
-name: Activity email templates
+name: Deploy email templates
 
 on:
   push:
-    branches: [ build ]
+    branches: 
+      - build
 
 jobs:
   deploy:
