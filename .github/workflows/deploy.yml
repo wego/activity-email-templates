@@ -4,8 +4,8 @@ on:
     branches: [build]
 
 jobs:
-  name: deploy-job
-  runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
 
   steps:
     - name: Checkout
