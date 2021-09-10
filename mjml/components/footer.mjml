@@ -1,0 +1,22 @@
+<!-- FOOTER START -->
+<mj-section padding="10px 15px" background-color="#2c2c2c">
+  <mj-column>
+    <mj-text align="center" font-size="14px" line-height="30px" color="#ffffff">
+      <p>%%sent-wego</p>
+      <p><a rel="noopener noreferrer" href="http://www.zouba.co/privacy-policy.html" style="color: #0089bf;">%%privacy-policy</a>
+        <strong>.</strong>
+        <a rel="noopener noreferrer" href="http://www.zouba.co/terms-and-conditions.html" target="_blank" style="color: #0089bf;">%%terms-conditions</a></p>
+    </mj-text>
+    <mj-social font-size="15px" icon-size="30px" mode="horizontal" padding-top="0" align="center">
+      <mj-social-element name="facebook" href="https://www.facebook.com/wego" background-color="#3953a0">
+      </mj-social-element>
+      <mj-social-element name="twitter" href="https://twitter.com/Wego" background-color="#50acf2">
+      </mj-social-element>
+      <mj-social-element name="linkedin" href="https://www.linkedin.com/company/wego-com" background-color="#0285b2">
+      </mj-social-element>
+      <mj-social-element name="instagram" href="https://www.instagram.com/wego_travel/" background-color="#cc2366">
+      </mj-social-element>
+    </mj-social>
+  </mj-column>
+</mj-section>
+<!-- FOOTER START -->

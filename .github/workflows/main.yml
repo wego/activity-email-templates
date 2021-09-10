@@ -6,8 +6,6 @@ name: Build email tempates
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ build ]
-  pull_request:
     branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
@@ -33,7 +31,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: main
+          BRANCH: build
           FOLDER: "build"
 
       - name: Archive production artifacts

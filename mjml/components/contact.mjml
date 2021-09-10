@@ -1,0 +1,22 @@
+<!-- HEADER START -->
+<mj-section padding="10px 15px" background-color="#ffffff">
+  <mj-column>
+    <mj-text font-size="14px" line-height="30px" color="#ababab">
+      <p>
+        <strong style="display: block; color: black; font-size: 20px;">%%contact-us</strong>
+        %%contact-us-desc </p>
+      <p>
+        %%phone-whatsApp
+        <strong style="display: block; color: black; font-size: 18px;">
+          (0020) – 2 2322 89 58 (%%outside-egypt)</strong>
+        <strong style="display: block; color: black; font-size: 18px;">
+          02 – 2322 89 58 (%%within-egypt)</strong>
+      </p>
+      <p>
+        %%email
+        <a rel="noopener noreferrer" href="mailto:support@zouba.co?subject=Help%20with%20booking" style="display: block; color: #0089bf;text-decoration:none; font-size: 18px; font-weight: bold">customersupport@wego.com</a>
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>
+<!-- HEADER START -->
