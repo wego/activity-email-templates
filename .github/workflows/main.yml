@@ -22,10 +22,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    - name: Create a Release
-      uses: elgohr/Github-Release-Action@master
+    - name: Github Release
+      uses: elgohr/Github-Release-Action@v3.1
+
       env:
-        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        GITHUB_TOKEN: '${{ secrets.RELEASE_TOKEN }}'
       with:
         args: MyReleaseMessage
           
