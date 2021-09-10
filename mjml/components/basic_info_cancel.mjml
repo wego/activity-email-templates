@@ -1,0 +1,32 @@
+<!-- BASIC INFO START -->
+<mj-section padding="10px 15px" background-color="#ffffff">
+  <mj-column>
+    <mj-text font-size="14px" line-height="30px" color="#ababab" padding-bottom="0">
+      <p>
+        <strong style="display: block; color: black; font-size: 16px;">{{z_activityName}}</strong>
+        {{z_location}}
+      </p>
+      <p>
+        %%wego-reference-id:
+        <strong style="display: block; color: black; font-size: 16px;">{{z_bookingId}}</strong>
+      </p>
+      <p>
+        %%total-pax:
+        <strong style="display: block; color: black; font-size: 16px;">{{z_pax}}</strong>
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column vertical-align="bottom">
+    <mj-text font-size="14px" line-height="30px" color="#ababab" padding="0 25px">
+      <p>
+        %%booking-date:
+        <strong style="display: block; color: black; font-size: 16px;">{{z_bookingDate}}</strong>
+      </p>
+      <p>
+        %%total-amount:
+        <strong style="display: block; color: black; font-size: 16px;">{{z_finalPrice}}</strong>
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>
+<!-- BASIC INFO START -->

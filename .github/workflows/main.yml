@@ -1,6 +1,9 @@
 name: Build and deploy email templates
 
-on: [push]
+on:
+  push:
+    branches:
+      - build
 
 jobs:
   job1:
@@ -8,26 +11,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
-      with:
-        node-version: '14'
-    - run: npm install
-    - run: gulp
-    
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: main
-        FOLDER: 'build'
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - run: npm install
+      - run: gulp
 
-    - name: Archive production artifacts
-      uses: actions/upload-artifact@v1
-      with:
-        name: build
-        path: build
-          
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: main
+          FOLDER: "build"
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: build
+          path: build
+
   job2:
     name: deploy-job
     needs: job1

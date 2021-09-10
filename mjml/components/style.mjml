@@ -1,0 +1,10 @@
+<!-- HEAD START -->
+<mj-head>
+  <mj-style inline="inline">
+    * {
+      direction: ltr;
+      text-align: left !important;
+    }
+  </mj-style>
+</mj-head>
+<!-- HEAD START -->
