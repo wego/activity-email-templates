@@ -29,7 +29,7 @@ jobs:
       
       - uses: actions/checkout@main
       - name: Deploy
-        uses: s0/git-publish-subdir-action@develop
+        uses: s0/git-publish-subdir-action@main
         env:
           REPO: self
           BRANCH: template
