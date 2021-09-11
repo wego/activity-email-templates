@@ -1,0 +1,48 @@
+<!-- BASIC INFO - RUFUND START -->
+<mj-section padding="10px 15px" background-color="#ffffff">
+  <mj-column>
+    <mj-text font-size="14px" line-height="30px" color="#ababab" padding-bottom="0">
+      <p>
+        <strong style="display: block; color: black; font-size: 16px;">{{z_activityName}}</strong>
+        {{z_location}}
+      </p>
+      <p>
+        %%total-amount:
+        <strong style="display: block; color: black; font-size: 16px;">{{z_finalPrice}}</strong>
+      </p>
+      <p>
+        %%wego-reference-id:
+        <strong style="display: block; color: black; font-size: 16px;">{{z_bookingId}}</strong>
+      </p>
+      <p>
+        %%partner-name:
+        <strong style="display: block; color: black; font-size: 16px;">{{z_partnerName}}</strong>
+      </p>
+      <p>
+        %%booking-date:
+        <strong style="display: block; color: black; font-size: 16px;">{{z_bookingDate}}</strong>
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column vertical-align="bottom">
+    <mj-text font-size="14px" line-height="30px" color="#ababab" padding="0 25px">
+      <p style="margin-top: 0">
+        %%refund-amount:
+        <strong style="display: block; color: black; font-size: 16px;">{{z_refundAmount}}</strong>
+      </p>
+      <p>
+        %%new-refund-amount:
+        <strong style="display: block; color: black; font-size: 16px;">{{z_newRefundAmount}}</strong>
+      </p>
+      <p>
+        %%partner-reference-id:
+        <strong style="display: block; color: black; font-size: 16px;">{{z_partnerBookingId}}</strong>
+      </p>
+      <p>
+        %%travel-date:
+        <strong style="display: block; color: black; font-size: 16px;">{{z_travelDate}}</strong>
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>
+<!-- BASIC INFO - RUFUND  START -->

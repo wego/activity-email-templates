@@ -1,0 +1,26 @@
+<mjml>
+  <mj-include path="./components/style.mjml" />
+  <mj-body background-color="#eeeeee">
+    <mj-include path="./components/header.mjml" />
+
+    <mj-section background-color="#e7fddc" padding="20px 15px">
+      <mj-column>
+        <mj-text font-size="16px" line-height="24px">
+          <p style="margin:0">%hi %%finance-team,</p>
+        </mj-text>
+        <mj-text font-weight="bold" font-size="20px">
+          %request-refund-title
+        </mj-text>
+        <mj-text font-size="15px" line-height="26px">
+          %request-refund-desc
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="./components/basic_info_refund.mjml" />
+    <mj-include path="./components/cancellation_policy.mjml" />
+    <mj-include path="./components/aditional_info.mjml" />
+    <mj-include path="./components/contact.mjml" />
+    <mj-include path="./components/footer.mjml" />
+  </mj-body>
+</mjml>
