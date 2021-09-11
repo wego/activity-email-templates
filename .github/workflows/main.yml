@@ -26,13 +26,16 @@ jobs:
           node-version: "14"
       - run: npm install
       - run: gulp
-      
-      - uses: actions/checkout@main
-      - name: Deploy
-        uses: s0/git-publish-subdir-action@main
-        env:
-          REPO: self
-          BRANCH: template
-          FOLDER: public/site
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: build
+          FOLDER: build/
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: build
+          path: build
